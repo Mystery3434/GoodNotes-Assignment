@@ -128,4 +128,4 @@ if __name__== "__main__":
                                                                   batch_size=64)
     validation_X, validation_Y =  X[-89000:], Y[-89000:] # Roughly the last 10% of the data, which has not been used for training.
     evaluate_model(model, validation_X, validation_Y, display=True, classification=True)
-    plot_losses(history, 500)
+    plot_losses(history, 100)
